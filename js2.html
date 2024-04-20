@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript"> 
+  
+ var str = "Javascript is a great Language"; 
+ 
+ document.write("string length is:- " + str.length); 
+ 
+</script>
+<script type="text/javascript"> 
+  
+ var str = "Javascript is a great is Language is"; 
+ 
+ document.write(str.replace('great','greatest')); 
+ 
+document.write(str.indexOf('is')); 
+ 
+</script>
+<script type="text/javascript"> 
+  
+ var str = "Javascript is a great is Language is"; 
+  
+document.write(str.charAt(3));//a is the index value is 3 
+ 
+</script>
+<script type="text/javascript"> 
+  
+ var str = "Javascript is a great is Language is"; 
+  
+document.write("ASCII code of v is:- " + str.charCodeAt(2)); 
+</script>
+<script type="text/javascript"> 
+  
+ var str = "Javascript now a days very popular technology!"; 
+ 
+    document.write(str.split(' ')); 
+ 
+    document.write(str.repeat(3)); 
+    document.write(str.toUpperCase());
+        document.write(str.toLowerCase());
+            document.write(str.includes('now'));/* o/p is boolean*/
+            document.write(str.startsWith("Java"));
+
+
+
+
+ 
+</script>
+<script type="text/javascript"> 
+  
+ var str = "Javascript now a days very popular technology!"; 
+ 
+    document.write(str.substr(2,8));//index value is 2  
+                                     //8 characters 
+ 
+    document.write(str.substr(3,6));//6 characters 
+ 
+ 
+</script>
+current date and time:<h1 id="txt" style="color:red;background-color: lightyellow;"> </h1>
+<script type="text/javascript">
+	var day=new Date(); //new:keyword date:obj
+	alert(day);
+
+	document.getElementById("txt").innerHTML= day;/* advantage of this type is connects body with script i.e" current date and time: " with present date(); and h1 is applies to this date() obj*/
+	var date= day.getDate();
+	document.write(date);/*likewise getmonth,getfullyear*/
+	
+
+</script>
+<h1 id="txt" style="color: green;"> </h1>
+
+<script type="text/javascript">
+
+function getTime(){
+
+var day = new Date();//new is keyword Date() is object 
+
+var h = day.getHours();
+
+var m = day.getMinutes();
+
+var s = day.getSeconds();
+
+// document.write(h+":"+m+":"+s);
+
+document.getElementById('txt').innerHTML = h+":"+m+":"+s;
+
+setInterval('getTime()',1000);
+
+
+}
+
+getTime()//calling function
+
+
+</script>
+
+
+
+
+
+</body>
+</html>

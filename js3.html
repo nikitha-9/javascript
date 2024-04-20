@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title> </title>
+</head>
+<body>
+
+<p id="txt"> </p>
+
+<input type="text" onblur="msg()">
+
+
+<script type="text/javascript">
+
+function msg(){
+
+ document.getElementById('txt').innerHTML="Hello Welcome to World";
+
+}
+
+</script>
+<!--/*onfocus means placing a cursor in text field contrast is onblur*/-->
+<h1 id="pen"> </h1>
+
+<form onsubmit="os()" action="db.py">
+	<input type="text" name="">
+	<input type="submit" name="sub">
+
+	
+</form>
+<script type="text/javascript">
+	function os(){
+		document.getElementById('pen').innerHTML="hello welcome";//in fracn of secs
+	}
+</script>
+<h2> this is first page usage of history.back function click second page go > back</h2>
+<a href="js1.html"> second page go</a>
+<input type="button" name="back">
+
+
+</body>
+</html>
+

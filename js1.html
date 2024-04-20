@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+		<script type="text/javascript">
+ 
+var x = "Hyderabad!"; //string
+
+var y = 200; //number
+
+var z = true;//boolean
+
+var d;  //un defined 
+
+var jio = null; //null value
+
+ document.write(typeof x);
+
+</script>
+<script type="text/javascript">
+ 
+ var x = "10";//string Data Type
+
+ if(x === 10){//== it will check only value same or not 
+              // === it will check value & data types same or not 
+  document.write('true'+"<br>");
+ }
+ else{
+  document.write('false'+"<br>");//as string datatype"10" !=10.
+ }
+</script>
+<!DOCTYPE html>
+<html>
+<head>
+ <title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+ 
+ var age = 25; //number
+
+ var result; //un defined 
+
+ if(age>=18){
+  result = "eligible to vote";
+ }
+ else{
+  result = "you are not eleigble to vote";
+ }
+
+ document.write(result+"<br>");
+
+</script>
+
+<script type="text/javascript">
+ 
+var age = 15;
+
+var result =  (age>=18) ? "You are eligible to vote" : "You are not eligble";// if part:else part.
+
+document.write(result+"<br>");
+</script>
+<script type="text/javascript"> 
+  
+//1 to 10 numbers!  
+ 
+for(i=1;i<=10;i++){//initialization condition increment 
+ 
+document.write(i + "<br>"); 
+ 
+} 
+ 
+</script>
+<script type="text/javascript"> 
+ 
+//10 to 1 numbers!  
+ 
+for(i=10;i>=1;i--){//initialization condition increment 
+ 
+document.write(i + "<br>"); 
+ 
+} 
+ 
+</script>
+<script type="text/javascript"> 
+ 
+//print Hello world 5 times 
+ 
+for(i=1;i<=5;i++){//initialization condition increment 
+ 
+document.write("Hello world!" + "<br>"); 
+ 
+} 
+</script>
+<script type="text/javascript"> 
+//print even numbers from 1 to 20 
+//print odd numbers from 20 to 30   
+for(i=20;i<=30;i++){ 
+ 
+ if(i%2==1){ 
+  document.write("Odd Numbers! "+ i + "<br>") 
+ } 
+ 
+} 
+</script>
+<script type="text/javascript"> 
+//outside of block   
+for(i=20;i<=30;i++){ 
+ document.write(i + "<br>");//20 to 30 
+} 
+document.write(i + "<br>");//31 
+document.write(i + "<br>");//31 
+document.write(i + "<br>");//31 
+</script>
+<script type="text/javascript"> 
+  
+for(i=20;i<=30;i++){ 
+ if(i==25){ 
+  break;//statement//from 25 loop will stop 
+ } 
+ document.write(i + "<br>"); 
+} 
+ 
+</script>
+<script type="text/javascript"> 
+for(i=20;i<=30;i++){ 
+ if(i==25){ 
+  continue;//except 25 all numbers will come! 
+ } 
+ document.write(i + "<br>"); 
+} 
+ 
+</script>
+<button onclick="msg()"> click here</button>
+<button onclick="n()"> click here</button>
+
+
+<script type="text/javascript">
+    /*function we use ()paranthesis*/
+    function msg()
+    {
+        document.write("ex of fn");
+    }
+/*msg();/* calling the fn type 1*/
+   function n()
+   {
+    var x=10;
+    var hy=4;
+    var f=x+hy;
+    document.write(f);
+   }
+   function m(sno,name,designation){
+        document.write(sno+""+name+""+designation);
+   }
+   m(1,"nikks","B.A");/*passing parameters*/
+   function z(){
+            console.log('prints in  right click empty browser>inspect> console');
+
+   }
+   z();
+</script>
+        <!--bom-->
+<script type="text/javascript">
+    function alertmsg(){
+       // alert("submitted succesfully");/*alert browser model obj(bom)*/
+        var v=confirm();/*confirm:predefined*/
+        if(v==true){
+            alert('you have choosen ok button');
+        }
+        else{
+            alert("you have choosen cancel button");
+        }
+    }
+</script>
+<input type="submit" name="sub"  onclick="alertmsg()">
+<script type="text/javascript">
+    function pr(){
+        var v=prompt("enter ur name");
+        alert("my nameis "+v);
+    }
+    function openn(){
+        open('https://www.google.com/');/* works as anchor tag*/
+    }
+    function set(){
+    setTimeout( 
+        function(){
+        alert("welcome after 2 secs timez out");
+    },2000);
+    }
+
+</script>
+<input type="submit" name="sub1" onclick="pr()">
+<input type="submit" name="sub2" onclick="openn()">
+<input type="submit" name="ss"onclick="set()">
+<h5> redirects history with a preddefined fn called history.back</h5>
+<button onclick="goback()"> back</button>
+<script type="text/javascript">
+    function goback(){
+       history.back(); 
+    }
+</script>
+
+
+
+
+
+</body>
+</html>
+
+
+
+</body>
+</html>
