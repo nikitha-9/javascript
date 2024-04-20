@@ -1,0 +1,61 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+ <title></title> 
+</head> 
+<body> 
+ <script type="text/javascript"> 
+  function validateform(){ 
+ 
+   var name = document.myform.name.value; 
+   var pwd = document.myform.password.value; 
+ 
+   if(name == null || name ==""){  
+         alert("Name can't be blank");   
+         return false; 
+} 
+else if(pwd.length<6){   
+  alert("Password must be at least 6 characters long.");   
+  return false;   
+  }   
+ 
+  } 
+ 
+ </script> 
+ 
+ 
+<form name="myform" method="post" action="db.java"  
+ 
+onsubmit="return validateform()">  
+ 
+Name: <input type="text" name="name"><br/>   
+Password: <input type="password" name="password"><br/>   
+<input type="submit" value="register">   
+</form>
+<h2> javascript re-type validation code</h2>
+ <script type="text/javascript"> 
+  function matchpass(){ 
+   var pwd1 = document.f1.password.value; 
+   var pwd2 = document.f1.password2.value; 
+ 
+   if(pwd1 === pwd2){ 
+    alert('password is correct'); 
+    return true; 
+   } 
+   else{ 
+    alert('password is incorrect'); 
+    return false; 
+   } 
+  }  
+  </script>  
+
+<form name="f1" action="register.jsp" onsubmit="return matchpass()">   
+Password:<input type="password" name="password" /><br/>   
+Re-enter Password:<input type="password" name="password2"/><br/>   
+<input type="submit">   
+</form>    
+ 
+ 
+ 
+</body> 
+</html>

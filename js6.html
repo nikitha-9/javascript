@@ -1,0 +1,66 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+ <title></title> 
+ <body>
+  <h3> ------------ not a number method(nan)--------------</h3>
+  <script>   
+function validate(){   
+var num=document.myform.num.value;   
+ 
+if(isNaN(num)){   
+  document.getElementById("numloc").innerHTML="Enter Numeric value only";   
+  return false;   
+}else{   
+  return true;   
+  }   
+}   
+</script>  
+<form name="myform" onsubmit="return validate()" >   
+Number: <input type="text" name="num"><span id="numloc"> </span><br>  
+<input type="submit" value="submit">   
+</form>
+<h2>----------------toggle------------</h2>  
+<input type="password" value="inspannerpwd" id="typepass"> 
+<input type="checkbox" onclick="Toggle()"> 
+  <b>Show Password</b> 
+  <script> 
+  // Change the type of input to password or text 
+    function Toggle() { 
+ 
+      var temp = document.getElementById("typepass"); 
+ 
+      if(temp.type === "password") { 
+        temp.type = "text"; 
+      } 
+      else { 
+        temp.type = "password"; 
+      } 
+    } 
+</script>
+<h3>-------------------------------------------</h3> 
+<select id="ddlFruits"> 
+    <option value="">Choose Option</option> 
+    <option value="1">Apple</option> 
+    <option value="2">Mango</option> 
+    <option value="3">Orange</option> 
+</select> 
+ 
+<input type="submit" value="Validate" onclick="return Validate()" /> 
+<script type="text/javascript"> 
+    function Validate() { 
+        var ddlFruits = document.getElementById("ddlFruits"); 
+        if(ddlFruits.value == "") { 
+            //If the "Please Select" option is selected display error. 
+            alert("Please select an option!"); 
+            return false; 
+        } 
+        return true; 
+    } 
+</script> 
+<!-- /*resetImg() and enlargeImg are two fn's used on a img*/ -->
+
+ 
+ 
+</body> 
+</html>

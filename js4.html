@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> javascript-4</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var emp=["sowmya","sonu","arnika"];
+		for(i=0;i<=emp.length;i++){
+			document.write(emp[i]+"<br>");
+
+		}
+
+	</script>
+	<script type="text/javascript">
+//JavaScript Array directly (new keyword)
+
+var emp = new Array();//or new array("karna,"kutty","kala")
+
+emp[0] = "arnika";
+emp[1] = "Tarun";
+emp[2] = "charan";
+
+for(i=0;i<emp.length;i++){
+ document.write(emp[i] + "<br>");
+}
+var movies=["kgf","I","pk","a aa"]
+console.log(movies.slice(1,3));//prints index 1 to 3
+var months=["jan","feb","april"]
+document.write(months.sort());//sorts 1 st leeter in alphabetical order,digits also compares 1st digit and sort
+
+
+</script>
+<script type="text/javascript">
+	var numarray=[120,10,60,80];
+document.write(numarray.sort((a,b)=>a-b));
+//arrow function
+var prices=[-10,-0.2,-8,55,89]
+console.log(prices.find((element)=>element>0));
+console.log(prices.findIndex((element)=>element>0));
+console.log(prices.filter((element)=>element>0));// all values it prints which are+ve
+var months=["nik","karna","pina","kk","ll"];
+var total=months.splice(1,4,'baby','ara','diya');
+//(index,removecount,itemlist) fro 1 to count 4 it deletes and add item of list
+document.write(months);
+var g=["lilly","kalli"]
+var b=['bunny','bunty']
+console.log(g.concat(b));
+console.log(g.toString());
+
+</script>
+<script type="text/javascript">
+	
+var stdnt = {
+ firstName : 'kumar',
+ lastName : 'vivid',
+ rollno : 100,
+}
+// console.log(stdnt);
+document.write(stdnt.firstName+ " " + stdnt.lastName +" "+stdnt.rollno );
+</script>
+<script type="text/javascript">
+var student = { 
+    name: 'John', 
+    age: 20,
+    marks: {
+        science: 70,
+        math: 75
+    }
+}
+console.log(student);
+document.write("Student Marks are:- " + student.marks.science)
+var student = { 
+    name: 'kutty', 
+    age: 28,
+    marks: {
+        science: 70,
+        math: 75
+    }
+}
+delete student.marks.math;
+console.log(student);
+//    -----objecct creation is same with array creation i.e 3 types
+</script>
+<script type="text/javascript"> 
+  function printvalue(){ 
+   var name = document.f1.fname.value; 
+ 
+   alert("My Name is " + name); 
+  } 
+ </script> 
+ 
+ <form name="f1"> 
+  <label>Enter Your Name:</label><input type="text" name="fname"> 
+<button onclick="printvalue()" value="click"> click</button> 
+ </form>
+ <script type="text/javascript">
+  
+ function fin(){
+ 	var num=document.f2.one.value;//else document.getelementbyid giving id to txt field
+ 	if(num%2==0){
+ 		document.write("even number");
+ 	}
+ 	else{
+ 		document.write("odd number");
+ 	}
+
+ }
+</script>
+ <form name="f2">
+ 	<label>enter a number:</label>
+ 	<input type="text" name="one">
+ 	<button onclick="fin()"> find</button>
+ </form><!--similarly we do have getelementsbyname,getelementsbytagname-->
+ <h4> -----------------------------</h4>
+ <!-- <form name="myForm">  
+<input type="button" value="comment" onclick="showcommentform()">  
+<h1 id="mylocation" style="color: red;"> </h1>  
+</form>  
+
+<script type="text/javascript">
+ 
+ function showcommentform(){
+
+  var data="Name:<br><input type='text' name='name'><br>Comment:<br><textarea rows='5' cols='50'></textarea><br><input type='submit' value='comment'>"; 
+
+  document.getElementById('mylocation').innerHTML = data; 
+ }
+</script> -->
+<form name="myForm">  
+
+<input type="password" value="" name="userPass" 
+onkeyup="validate()">  
+
+Strength:<span id="mylocation">no strength</span>  
+</form>  
+
+<script type="text/javascript">
+function validate() { 
+var msg;
+if(document.myForm.userPass.value.length>5){  
+msg="good";  
+}  
+else{  
+msg="poor";  
+}  
+document.getElementById('mylocation').innerText= msg;
+//inner text usage is it only prints msg ie poor or good whereas innerhyml displays no strength:goodor poor  
+ }  
+</script>
+<h2> queryselector used to call id or classes</h2>
+<h1 class="special"> hi holla namaste</h1>
+<script type="text/javascript">
+    var x=document.queryselector(".special");
+    document.write(x);
+</script>
+<p>
+    <h2> DOM PROPERTIES TO SELECT HTML ELEMENTS</h2>
+    like document.body,document.img,document.title,document.form,docuent.links
+</p>
+<script type="text/javascript">
+    console.log(document.title);
+</script>
+
+
+
+
+</body>
+</html>
